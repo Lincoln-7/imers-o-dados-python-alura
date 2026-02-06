@@ -8,7 +8,7 @@ st.set_page_config(
     layout="wide",
 )
 
-df = pd.read_csv("https://raw.githubusercontent.com/vqrca/dashboard_salarios_dados/refs/heads/main/dados-imersao-final.csv")
+df = pd.read_csv("https://github.com/Lincoln-7/imers-o-dados-python-alura/blob/main/dados-imers%C3%A3o-final.csv")
 
 st.sidebar.header("🔍 Filtros")
 
@@ -121,4 +121,5 @@ with col_graf4:
         st.warning("Nenhum dado para exibir no gráfico de países.")
 
 st.subheader("Dados Detalhados")
+
 st.dataframe(df_filtrado)
